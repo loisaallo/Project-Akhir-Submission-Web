@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Go food</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="aset/styles/style.css">
+    <link rel="stylesheet" href="aset/styles/appbar.css">
+    <link rel="stylesheet" href="aset/styles/food.css">
+    <link rel="stylesheet" href="aset/styles/search.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <app-bar></app-bar>
+        <div class="jumbotron"> 
+            <img src="aset/gambar/Gofood_logo.svg.png" alt="gofood" width="600" height="100">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#search-container">Pencarian</a></li>
+                <li><a href="#pesanmakan">Pesan Makanan</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#makanan_favorit">Makanan Favorit</a></li>
+                <li><a href="#harga_minuman">Harga Minuman</a></li>
+                <li><a href="#rekomendasi_tempat">Rekomendasi Tempat Makanan</a></li>
+                <li><a href="#tentangkami">Tentang Kami</a></li>
+            </ul>
+        </nav>
+    </app-bar>
+    </header>
+    <main>
+        <body>
+            <div class="clock-container">
+                <div class="clock">
+                <span class="time"></span>
+                <span class="date"></span>
+                </div>
+            </div>
+            
+            <script src="node_modules/moment/moment.js"></script>
+            <script src="node_modules/jquery/dist/jquery.min.js"></script>
+            <script src="src/index.js"></script>
+            <script src="./dist/main.js"></script>
+            <script src="./dist/bundle.js"></script>
+            
+          </body>
+        
+        <div id="content">
+                    <div id="search-container" class="search-container">
+                      <input placeholder="Masukan Nama Makanan" id="searchElement" type="search">
+                      <button id="searchButtonElement" type="submit">Cari</button>
+                    </div>
+                    <div id="foodList"></div>
+
+            
+    <script src="aset/app.js" type="module"></script>
+    <script src="aset/pesan.js"></script>
+              
+
+
+            </body>
+            </html>
+
+        <article id="dashboard" class="card">
+
+          <h2>Daftar Makanan</h2>
+            <div class="image">
+                <img src="aset/gambar/1 ayam.jpeg" alt="beranda" width="160" height="200">
+                <p>Ayam Bakar</p>
+                <p style="color: red">Rp. 30.000</p>
+            </div>
+            <div class="image">
+                <img src="aset/gambar/2 burger.jpeg" alt="beranda" width="160" height="200" >
+                <p>Burger</p>
+                <p style="color: red">Rp. 20.000</p>
+            </div>
+            <div class="image">
+                <img src="aset/gambar/3 nasi zucchini.jpeg" alt="beranda" width="160" height="200" >
+                <p>Nasi zucchini</p>
+                <p style="color: red">Rp. 30.000</p>
+            </div>
+            <div class="image">
+                <img src="aset/gambar/4 mie gacoan.jpeg" alt="beranda" width="160" height="200" >
+                <p>Mie Gacoan</p>
+                <p style="color: red">Rp. 20.000</p>
+            </div>
+            <p><p>
+            <div class="image">
+                <img src="aset/gambar/5 salad.jpeg" alt="beranda" width="160" height="200" >
+                <p>Salad</p>
+                <p style="color: red">Rp. 25.000</p>
+            </div>
+            <div class="image">
+                <img src="aset/gambar/6 seafood.jpeg" alt="beranda" width="160" height="200" >
+                <p>Seafood</p>
+                <p style="color: red">Rp. 35.000</p>
+            </div>
+            <div class="image">
+                <img src="aset/gambar/7 steak.jpeg" alt="beranda" width="160" height="200" >
+                <p>Steak</p>
+                <p style="color: red">Rp. 20.000</p>
+            </div>
+            <div class="image">
+                <img src="aset/gambar/8 daging sapi.jpeg" alt="beranda" width="160" height="200" >
+                <p>Daging Sapi</p>
+                <p style="color: red">Rp. 30.000</p>
+            </div>
+
+
+          </p></p>
+ 
+        </article>
+
+            <article id="makanan_favorit" class="card">
+            <h2>Makanan Favorit</h2>
+            <section>
+            <img src="aset/gambar/mf1.jpeg" id="ayam" alt="Ayam Panggang" width="180" height="260" >
+            <!-- style="float: left; margin: 10px;"> -->
+            <p><b>Ayam Panggang</b><br><font color="#f8192e"><b>Rp. 30.000</b></font></p>
+            <p align="justify">Ayam panggang adalah daging ayam yang dimasak sebagai hidangan dengan cara dipanggang. Baik dipanggang di dapur rumah, di atas api, atau dengan rotisserie. Umumnya ayam disangrai dengan memanfaatkan lemak dan sarinya sendiri dengan cara memutar daging selama pemanggangan.</p>
+            <br><br></p></section>
+
+
+            <section>
+            <img src="aset/gambar/mf2 berbeque.jpeg" id="barbeque" alt="Barbeque" width="180" height="260" >
+            <!-- style="float: left; margin: 10px;"> -->
+            <p><b>Barbeque</b><br><font color="#f8192e"><b>Rp. 50.000</b></font></p>
+            <p align="justify">Barbeque merupakan teknik memasak daging dengan menggunakan panas tidak langsung. Panasnya datang berupa asap dari proses pembakaran kayu. Jadi, bisa dibilang bahwa barbeque merupakan daging yang dimatangkan dengan proses pengasapan. Teknik ini membutuhkan waktu 3-16 jam pematangan bahan bergantung kepada jenis dan besar daging. Suhunya juga rendah. Biasanya, setelah dimatangkan, daging akan mengalami penyusutan sebesar 50% sehingga rasanya terkonsentrasi di daging tersebut.</p>
+            <br><br></p>
+                    </section>
+                </article>
+
+    
+            <article id="harga_minuman" class="card">
+                <h2>Harga Minuman</h2>
+                <br><br>
+                
+                <!-- <div id="daftarbuku"> -->
+
+                <img src="aset/gambar/es strobery.jpg" width="180" height="260" alt="es stroberry" style="
+                margin: 10px;">
+                <p><b>Es Stroberry</b><br><font color="#f8192e"><b>Rp. 15.000</b></font></p>
+                <br><br>
+
+                <img src="aset/gambar/es teh.jpg" width="180" height="260" alt="dupin" style="
+            margin: 10px;">
+                <p><b>Es Teh</b><br><font color="#f8192e"><b>Rp. 10.000</b></font></p>
+                <br><br>
+
+                <img src="aset/gambar/jus lemon.jpg" width="180" height="260" alt="harry" style="
+            margin: 10px;">
+                <p><b>Jus Lemon</b><br><font color="#f8192e"><b>Rp. 15.000</b></font></p>
+                <br><br>
+
+                <img src="aset/gambar/Strawberry Parfait.jpg" width="180" height="260" alt="hobbit" style="
+            margin: 10px;">
+                <p><b>Strawberry Parfait</b><br><font color="#f8192e"><b>Rp. 15.000</b></font></p>
+                <br><br>
+            </article>
+
+            <article id="rekomendasi_tempat" class="card">
+                <h1>Rekomendasi Tempat Makan</h1>
+                <h2>Ichibenz Ramen</h2>
+                <img src="aset/gambar/warung 1.jpg" class="featured-image" alt="tokobuku">
+                <p>Ichibenz Ramen yang berlokasi di Jl. Maulana Hasanudin, kawasan Cipondoh, Tangerang. Tempat makan ramen ini terkenal dengan hidangan ramennya yang enak dan murah meriah. Satu porsi ramen yang menggugah selera di sini hanya dibanderol mulai dari di bawah RP50.000.
+                    Selain itu Ichibenz Ramen juga cocok bagi kamu yang ingin menyantap ramen sembari menikmati tempat konglow yang instagramable bersama teman. Tempat ini buka setiap hari dari pukul 10.00-21.30 WIB.</p>
+
+                
+            </article>
+            <!-- spasi -->
+            <article id="tokobuku" class="card">
+                <h1>Rekomendasi Tempat Makan</h1>
+                <h2>Vong Kitchen</h2>
+                <img src="aset/gambar/french.jpeg" class="featured-image" alt="tokobuku">
+                <p>Vong Kitchen merupakan Restoran Perancis  yang berkonsep casual fine dining ini punya interior dengan kesan vintage dengan sentuhan modern. Lilin kecil yang ada di setiap meja juga menambah atmosfer romantis di seluruh ruangan.  berlokasi di Lot 11, Jl. Jalan Jenderal Sudirman Kav 52-53, Lot 11, Jakarta 12190 Indonesia dan waktu bukanya setiap hari mulai  06:00 AM - 12:00 AM.</p>
+
+                
+            </article>
+            <!-- spasi -->
+            <article id="tokobuku" class="card">
+                <h1>Rekomendasi Tempat Makan</h1>
+                <h2>Mediterranea Restaurant</h2>
+                <img src="aset/gambar/italian.jpeg" class="featured-image" alt="tokobuku">
+                <p> Mediterranea Restaurant adalah tempat makan khas makan italia dimana berbagai menu makanan khas Italia ditaruh dalam wadah-wadah dan dijejer di etalase. Berbagai makanan Italia yang ditawarkan ada mulai dari Lasagna, Crespelle, Pollo Funghi, Pollo Stroganoff, Pollo Pizz, Potato Salad dan masih banyak lagi.Tempat makan ini berlokasi di Jl. Tirtodipuran no. 24A Mantrijeron, 55143 Indonesia dan waktu bukanya setiap hari mulai  06:00 AM - 12:00 AM.</p>
+
+               
+            </article>
+            <article id="tokobuku" class="card">
+                    <ul class="pesanMakan">
+                        <h1>Pesan Makanan</h1>
+                        <li>
+                            <label for="inputFoodTitle">Nama Makanan</label>
+                            <input id="inputFoodTitle" type="text" class="form-control" placeholder="Masukan Nama Makanan">
+                        </li>
+                        <li>
+                            <label for="inputDrinkTitle">Nama Minuman</label>
+                            <input id="inputDrinkTitle" type="text" class="form-control" placeholder="Masukan Nama Minuman">
+                        </li>
+                        <li>
+                            <label for="inputPriceTitle">Harga</label>
+                            <input id="inputPriceTitle" type="number" class="form-control" placeholder="Masukan Harga">
+                        </li>
+                        <li>
+                            <button id="buttonSave" class="btn btn-success">Pesan</button>
+                        </li>
+                    </ul>
+            </article>
+            <article class="card">
+                <div id="listFood"></div>
+            </article>
+        </div>
+        
+
+        <aside>
+            <article class="profile card">
+                <header>
+                    <h2>Jenis Makanan</h2>
+                </header>
+                <section>
+                    
+                    <table>
+                    <ul>
+                  <p><li><a href="">Seafood</a></li></p>
+                  <p><li><a href="">Sayur - sayuran</a></li></p>
+                  <p><li><a href="">Daging dan Telur</a></li></p>
+                  <p><li><a href="">Barbeque</a></li></p>
+                  <p><li><a href="">Noodles</a></li></p>
+                  <p><li><a href="">Burger</a></li></p>
+                  <p><li><a href="">Bakso</a></li></p>
+                </ul> 
+                    </table>
+                </section>
+            </article>
+
+
+
+            <article class="profile card">
+                <header>
+                    <h2>Lokasi Tempat Makanan</h2>
+                    <figure>
+                        <img src="aset/gambar/lokasi_maps.PNG">
+                    </figure>
+                    
+                </header>
+            </article>
+
+            <article class="profile card" id="tentangkami">
+                <header>
+                    <h2>Kontak</h2>
+                </header>
+                <section>
+                    <ul>
+                        <li style="display: flex;">
+                            <img src="aset/gambar/email.jpg" alt="email" style="width: 50px; height: 50px; margin-right: 10px;">
+                            <p>gofood@gmail.com</p>
+                        </li>
+                        <li style="display: flex;">
+                            <img src="aset/gambar/wa.png" alt="wa" style="width: 50px; height: 50px; margin-right: 10px;">
+                            <p>098678123082</p>
+                        </li>
+                        <li style="display: flex;">
+                            <img src="aset/gambar/nohp.png" alt="nohp" style="width: 50px; height: 50px; margin-right: 10px;">
+                            <p>+61 5347-190</p>
+                        </li>
+                        <li style="display: flex;">
+                            <img src="aset/gambar/instagram.jpg" alt="instagram" style="width: 50px; height: 50px; margin-right: 10px;">
+                            <p>@go_food</p>
+                        </li>
+                    </ul>
+                    <!-- <div class="email" style="display: flex; align-items: center;">
+                        <img src="aset/gambar/email.jpg" alt="email" style="width: 50px; height: 50px; margin-right: 10px;">
+                        <p>gofood@gmail.com</p>
+                    </div>
+                    <div class="wa" style="display: flex; align-items: center;">
+                        <img src="aset/gambar/wa.png" alt="wa" style="width: 50px; height: 50px; margin-right: 10px;">
+                        <p>098678123082</p>
+                    </div>
+                    <div class="nohp" style="display: flex; align-items: center;">
+                        <img src="aset/gambar/nohp.png" alt="nohp" style="width: 50px; height: 50px; margin-right: 10px;">
+                        <p>+61 5347-190</p>
+                    </div>
+                    <div class="instagram" style="display: flex; align-items: center;">
+                        <img src="aset/gambar/instagram.jpg" alt="instagram" style="width: 50px; height: 50px; margin-right: 10px;">
+                        <p>@go_food</p>
+                    </div> -->
+                </section>
+            </article>
+
+        </aside>
+    </article>
+
+    </main>
+    <footer>
+        <p>Go Food 2022</p>
+    </footer>
+    <script src="aset/indeks.js"></script>
+    <script src="aset/app.js" type="module"></script>
+    <script src="src/index.js">"module"</script>
+    <script src="./dist/bundle.js"></script>
+    <script src="aset/pesan.js"></script>
+        
+    <script src="node_modules/moment/moment.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+</body>
+
+</html>

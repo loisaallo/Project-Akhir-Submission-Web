@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@515&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+
+.jumbotron {
+    height: 400px;
+    font-size: 20px;
+   text-align: center;
+   color: black;
+   background-image: url('../../aset/gambar/bg1.jpg'); 
+   background-attachment: fixed;
+   background-size: cover;
+   background-position: center;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+nav {
+    background-color: rgb(210 105 30);
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: inline;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+.card {
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    flex-basis: 30%;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.image {
+    /* box-shadow: 6px 6px 4px 4px lightgray; */
+    width: 24%;
+    height: 300px;
+    padding: 5px 0;
+    display: inline-block;
+}
+.image img{
+    box-shadow: 6px 6px 6px 6px lightgray;;
+}
+
+h2 {
+    color: #000000;
+}
+
+h3 {
+    color: #000000;
+}
+
+#content {
+    padding: 10px 50px;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.featured-image {
+    flex-basis: 30%;
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
+}
+.pesanMakan {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.pesanMakan li{
+    width: 100%;
+    display: flex;
+    /* background-color: rgb(210 105 30); */
+    margin: 0 0 5px 0;
+    align-items: center;
+}
+.pesanMakan li label{
+    display: inline-block;
+    width: 250px;
+}
+.pesanMakan li input{
+    width: 500px;
+    height: 50px;
+    border: none;
+    background-color: rgb(210 105 30);
+    color: white;
+    box-shadow: 2px 2px 4px lightgray;
+}
+.pesanMakan li button{
+    width: 150px;
+    height: 40px;
+    background-color: green;
+    margin: 0 auto;
+    border: none;
+    box-shadow: 2px 2px 4px lightgray;
+    cursor: pointer;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: rgb(210 105 30);
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+
+    img {
+    flex-basis: 30%;
+     width: 200px;
+     height: 160px;
+     padding: 10px;
+     margin: 20px;
+}
+
+#news {
+    text-align: center;
+    flex-basis: 70%;
+    float: left;
+    margin: 10px;
+    padding: 0 20px;
+}
+
+.flex-row {
+        display: inherit;
+    }
+
+
+    .card2 {
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    flex-basis: 30%;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    }
+}
